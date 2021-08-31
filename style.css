@@ -21,5 +21,12 @@ body{
 }
 
 .fill{
-  background: black;
+  background: rgb(160, 152, 152);
+}
+
+button{
+  margin: 5px;
+  background: tomato;
+  border-radius: 2px ;
+  padding: 5px 5px;
 }
