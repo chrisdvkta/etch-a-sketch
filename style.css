@@ -1,32 +1,70 @@
-body{
-  display:flex;
-  flex-direction: column;
+:root{
+  --color-yellow: #f5dd07;
+  --color-black: #171719;
+  --color-red: #e63946;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+.container{
+  display: flex;
   justify-content: center;
+  padding: 0 2vw;
+
+}
+
+h2{
+  text-align: center;
+}
+
+body{
+  font-size: 1.6rem;
+  color : var(--color-red);
+
+}
+
+
+.controls {
+  display: flex;
   align-items: center;
 }
 
-
-.grid-column{
-  display:inline-block;
-  border: 1px solid black;
-  min-height: 20px;
-  min-width: 20px;
-  margin-left: 2px;
-  margin-top: 2px;
+.grid-size{
+  font-weight : 500;
+  margin-bottom : 0.5rem;
 }
 
- #container{ 
-  border: 5px solid chartreuse;
-
+.apply,.reset{
+  margin : 0 auto;
+  padding : 0.5rem 1rem;
+  border : none;
+  background-color: var(--color-yellow);
+  border-radius : 0.6rem;
+  cursor: pointer;
 }
 
-.fill{
-  background: rgb(160, 152, 152);
+.grid{
+  border: 2px solid #61b18e;
+  border-radius: 1rem;
+  width: 50rem;
+  height: 50rem;
+  position : relative;
+  display: flex;
+  flex-flow: row wrap;
+   justify-content: space-around; 
 }
 
-button{
-  margin: 5px;
-  background: tomato;
-  border-radius: 2px ;
-  padding: 5px 5px;
+.box{
+  border: 0.5px solid rgba(0,0,0,0.5);
+  border-radius: 0.5rem;
+}
+
+.box.active{
+  background-color: var(--color-yellow)
 }
